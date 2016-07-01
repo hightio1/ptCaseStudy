@@ -40,7 +40,7 @@ h2 {
 }
 h3 {
     color: #000033;
-    font-family: Georgia, Times New Roman, serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 .resort {
     color: #5C7FA3;
@@ -55,7 +55,7 @@ main ul {
 h1 {
     margin-bottom: 0;
     margin-top: 0;
-    font-family: Georgia, Times New Roman, serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 nav ul {
     list-style-type: none;
