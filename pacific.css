@@ -1,68 +1,19 @@
-body {
-    background-color: #4F6D93;
-    color: #666666;
-    background-image: linear-gradient(#FFFFFF, #4F6D93);
-    background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
+header,
+main,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: block;
 }
-header {
-    background-color: #000033;
-    color: #FFFFFF;
-    height: 60px;
-    padding-top: 15px;
-    text-align: center;
-    background-image: url(images/sunset.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
+#mobile {
+    display: none;
 }
-nav {
-    color: #FFFFFF;
-    padding: 20px;
-    font-weight: bold;
-    float: left;
-    width: 160px;
-}
-nav a {
-    text-decoration: none
-}
-nav a:link {
-    color: #000033;
-}
-nav a:visited {
-    color: #344873;
-}
-nav a:hover {
-    color: #FFFFFF;
-}
-h2 {
-    color: #3399CC;
-    text-shadow: 1px 1px 1px #CCCCCC;
-    font-family: Georgia, "Times New Roman", serif;
-}
-h3 {
-    color: #000033;
-    font-family: Georgia, "Times New Roman", serif;
-}
-.resort {
-    color: #5C7FA3;
-    font-weight: bold;
-}
-main ul {
-    list-style-image: url(images/marker.gif);
-}
-#contact {
-    font-size: 90%;
-}
-h1 {
-    margin-bottom: 0;
-    margin-top: 0;
-    font-family: Georgia, "Times New Roman", serif;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-    font-size: 1.2em;
+#desktop {
+    display: inline
 }
 #wrapper {
     margin-left: auto;
@@ -72,24 +23,6 @@ nav ul {
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 3px 3px 3px #333333;
-}
-main {
-    background-color: #FFFFFF;
-    padding-top: 1px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    margin-left: 190px;
-    display: block;
-}
-footer {
-    background-color: #FFFFFF;
-    padding: 20px;
-    font-size: 75%;
-    font-style: italic;
-    text-align: center;
-    margin-left: 190px;
-    font-family: Georgia, "Times New Roman", serif;
 }
 #homehero {
     height: 300px;
@@ -112,6 +45,91 @@ footer {
     background-repeat: no-repeat;
     margin-left: 190px;
 }
+#contact {
+    font-size: 90%;
+}
+.resort {
+    color: #5C7FA3;
+    font-weight: bold;
+}
+header {
+    background-color: #000033;
+    color: #FFFFFF;
+    height: 60px;
+    padding-top: 15px;
+    text-align: center;
+    background-image: url(images/sunset.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+nav {
+    color: #FFFFFF;
+    padding: 20px;
+    font-weight: bold;
+    float: left;
+    width: 160px;
+}
+nav a {
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+nav a:link {
+    color: #000033;
+}
+nav a:visited {
+    color: #344873;
+}
+nav a:hover {
+    color: #FFFFFF;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+body {
+    background-color: #4F6D93;
+    color: #666666;
+    background-image: linear-gradient(#FFFFFF, #4F6D93);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-left: 190px;
+    display: block;
+}
+main ul {
+    list-style-image: url(images/marker.gif);
+}
+h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+h2 {
+    color: #3399CC;
+    text-shadow: 1px 1px 1px #CCCCCC;
+    font-family: Georgia, "Times New Roman", serif;
+}
+h3 {
+    color: #000033;
+    font-family: Georgia, "Times New Roman", serif;
+}
+footer {
+    background-color: #FFFFFF;
+    padding: 20px;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    margin-left: 190px;
+    font-family: Georgia, "Times New Roman", serif;
+}
 table {
     border: 1px solid #3399CC;
     width: 80%;
@@ -131,22 +149,67 @@ td {
 tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
-header,
-main,
-nav,
-footer,
-figure,
-figcaption,
-aside,
-section,
-article {
+label {
+    float: left;
     display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 20px;
 }
-#mobile {
-    display: none;
+input {
+    display: block;
+    margin-bottom: 20px;
 }
-#desktop {
-    display: inline
+input[type="submit"] {
+    margin-left: 130px;
+}
+textarea {
+    display: block;
+    margin-bottom: 20px
+}
+video,
+embed {
+    float: right;
+    padding-left: 20px;
+}
+#gallery {
+    height: 200px;
+    text-align: left;
+    color: black;
+    position: relative;
+}
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+#gallery ul {
+    width: 300px;
+    list-style-type: none;
+}
+#gallery a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .25;
 }
 @media only screen and (max-width: 64em) {
     body {
@@ -209,6 +272,8 @@ article {
     }
     nav li {
         display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000;
     }
     nav a {
         display: block;
@@ -231,4 +296,14 @@ article {
     #desktop {
         display: none;
     }
+    label {
+        float: none;
+        text-align: left;
+    }
+    input[type="submit"] {
+        margin-left: 0;
+    }
+    #gallery {
+    display: none;
+}
 }
